@@ -2,27 +2,16 @@ package com.fanniemae.payroll.model;
 
 public class EmployeeType {
 	private String type;
-	private float salary; 
+	private float salary;
 	private float hoursWorked;
-	public EmployeeType(String type, float salary
-			, float hoursWorked) {
-		//super();
+
+	public EmployeeType(String type, float salary, float hoursWorked) {
+		// super();
 		this.type = type;
 		this.salary = salary;
 		this.hoursWorked = hoursWorked;
 	}
-	public String getType() {
-		return type;
-	}
-	public float getSalary() {
-		return salary;
-	}
-	public float getHoursWorked() {
-		return hoursWorked;
-	}
-	
-	
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -43,12 +32,19 @@ public class EmployeeType {
 			return false;
 		return true;
 	}
-	@Override
-	public String toString() {
-		return "EmployeeType [type=" + type + ", salary=" + salary + ", hoursWorked=" + hoursWorked + "]";
+
+	public float getHoursWorked() {
+		return hoursWorked;
 	}
-	
-	
+
+	public float getSalary() {
+		return salary;
+	}
+
+	public String getType() {
+		return type;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,7 +54,10 @@ public class EmployeeType {
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
-	
-		
-	
+
+	@Override
+	public String toString() {
+		return "EmployeeType [type=" + type + ", salary=" + salary + ", hoursWorked=" + hoursWorked + "]";
+	}
+
 }

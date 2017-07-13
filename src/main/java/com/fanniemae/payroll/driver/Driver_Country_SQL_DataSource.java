@@ -9,8 +9,6 @@ import java.util.List;
 
 import org.apache.commons.dbcp.BasicDataSource;
 
-
-
 public class Driver_Country_SQL_DataSource {
 
 	public static void main(String[] args) {
