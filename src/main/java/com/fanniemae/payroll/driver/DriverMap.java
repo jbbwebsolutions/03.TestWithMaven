@@ -18,6 +18,7 @@ public class DriverMap {
 		map.put("lucy", 2_000_000d);
 		map.put("peter", 3_000_000d);
 		map.put("david", 4_000_000d);
+		map.put("robert", 4_000_000d);
 		
 		System.out.println(map.get("david"));
 		System.out.println(map.size());
