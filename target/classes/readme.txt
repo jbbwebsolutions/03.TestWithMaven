@@ -1,0 +1,1 @@
+Required to produce the resources directory
