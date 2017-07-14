@@ -9,6 +9,7 @@ public class DriverUnionEmployee {
 		try {
 			UnionEmployee ue = 
 					new UnionEmployee("new", 50_000, 42);
+			System.out.println(ue);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
